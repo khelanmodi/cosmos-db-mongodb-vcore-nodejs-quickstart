@@ -1,0 +1,1 @@
+FROM ghcr.io/azure-samples/documentdb-quickstart-web-dashboard:latest

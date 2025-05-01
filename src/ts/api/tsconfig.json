@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "outDir": "dist/",
+    "module": "es2022",
+    "target": "es2017",
+    "moduleResolution": "node",
+    "moduleDetection": "force",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "isolatedModules": true
+  },
+  "include": [
+    "**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+}

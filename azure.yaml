@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
+
+name: cosmos-db-mongodb-vcore-nodejs-quickstart
+metadata:
+  template: cosmos-db-mongodb-vcore-nodejs-quickstart
+services:
+  javascript-api:
+    project: ./src/js/api
+    language: docker
+    host: containerapp
+  javascript-web:
+    project: ./src/js/web
+    language: docker
+    host: containerapp
+  typescript-api:
+    project: ./src/ts/api
+    language: docker
+    host: containerapp
+  typescript-web:
+    project: ./src/ts/web
+    language: docker
+    host: containerapp
+pipeline:
+  provider: github
+hooks:
+  postprovision:
+    windows:
+      shell: pwsh
+      run: |
+        echo "
+        SETTINGS__ENDPOINT=""$env:SETTINGS__ENDPOINT""
+        " > ./src/js/api/.env
+        echo "
+        SETTINGS__ENDPOINT=""$env:SETTINGS__ENDPOINT""
+        " > ./src/ts/api/.env
+      continueOnError: false
+      interactive: true
+    posix:
+      shell: sh
+      run: |
+        echo "
+        SETTINGS__ENDPOINT=\"$SETTINGS__ENDPOINT\"
+        " > ./src/js/api/.env
+        echo "
+        SETTINGS__ENDPOINT=\"$SETTINGS__ENDPOINT\"
+        " > ./src/ts/api/.env
+      continueOnError: false
+      interactive: true

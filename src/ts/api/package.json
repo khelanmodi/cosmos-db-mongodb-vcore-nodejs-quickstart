@@ -1,0 +1,30 @@
+{
+  "name": "cosmos-db-mongodb-vcore-nodejs-ts-quickstart",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/app.js",
+    "dev": "npx tsx app.ts"
+  },
+  "repository": {
+    "url": "https://github.com/azure-samples/cosmos-db-mongodb-vcore-nodejs-quickstart.git",
+    "directory": "src/ts",
+    "type": "git"
+  },
+  "dependencies": {
+    "@azure/identity": "^4.9.1",
+    "body-parser": "^2.2.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongodb": "^6.16.0"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.5",
+    "@types/express": "^5.0.1",
+    "@types/mongodb": "^4.0.6",
+    "@types/node": "^22.15.3",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
