@@ -59,6 +59,7 @@ resource mongoCluster 'Microsoft.DocumentDB/mongoClusters@2025-04-01-preview' = 
 resource mongoClusterUserManagedIdentity 'Microsoft.DocumentDB/mongoClusters/users@2025-04-01-preview' = {
   parent: mongoCluster
   name: managedIdentityPrincipalId
+  location: location
   properties: {
     identityProvider: {
       type: 'MicrosoftEntraID'
@@ -78,6 +79,7 @@ resource mongoClusterUserManagedIdentity 'Microsoft.DocumentDB/mongoClusters/use
 resource mongoClusterUserDeploymentIdentity 'Microsoft.DocumentDB/mongoClusters/users@2025-04-01-preview' = if (!pipeline) {
   parent: mongoCluster
   name: deploymentIdentityPrincipalId
+  location: location
   properties: {
     identityProvider: {
       type: 'MicrosoftEntraID'
