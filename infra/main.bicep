@@ -1,4 +1,4 @@
-metadata description = 'Provisions resources for a web application that uses MongoDB driver for .NET to connect to Azure Cosmos DB for MongoDB vCore.'
+metadata description = 'Provisions resources for a web application that uses MongoDB driver for .NET to connect to Azure DocumentDB (with MongoDB compatibility).'
 
 targetScope = 'resourceGroup'
 
@@ -281,7 +281,7 @@ module containerAppsJsWebApp 'br/public:avm/res/app/container-app:0.16.0' = {
           }
           {
             name: 'SETTINGS__HEADERSUFFIX'
-            value: 'Azure Cosmos DB for MongoDB vCore - JavaScript'
+            value: 'Azure DocumentDB - JavaScript'
           }
         ]
       }
@@ -343,7 +343,7 @@ module containerAppsTsWebApp 'br/public:avm/res/app/container-app:0.16.0' = {
           }
           {
             name: 'SETTINGS__HEADERSUFFIX'
-            value: 'Azure Cosmos DB for MongoDB vCore - TypeScript'
+            value: 'Azure DocumentDB - TypeScript'
           }
         ]
       }

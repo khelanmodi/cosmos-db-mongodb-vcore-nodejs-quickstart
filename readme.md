@@ -1,6 +1,6 @@
-# Azure Cosmos DB for MongoDB vCore Quickstart - MongoDB driver for Node.js
+# Azure DocumentDB (with MongoDB compatibility) Quickstart - MongoDB driver for Node.js
 
-This Quickstart is a Express API application that illustrates basic usage of the MongoDB driver for Node.js with [Azure Cosmos DB for MongoDB vCore](https://learn.microsoft.com/azure/cosmos-db/mongodb/vcore). [Azure Cosmos DB for MongoDB vCore](https://learn.microsoft.com/azure/cosmos-db/mongodb/vcore/oss) is built on [DocumentDB](https://github.com/documentdb) providing a powerful and flexible solution for NoSQL database needs.
+This Quickstart is a Express API application that illustrates basic usage of the MongoDB driver for Node.js with [Azure DocumentDB](https://learn.microsoft.com/azure/cosmos-db/mongodb/vcore). [Azure DocumentDB](https://learn.microsoft.com/azure/cosmos-db/mongodb/vcore/oss) is built on [DocumentDB](https://github.com/documentdb) providing a powerful and flexible solution for NoSQL database needs.
 
 ## Pre-requisites
 
@@ -20,7 +20,7 @@ architecture-beta
 
     service registry(server)[Container registry] in azure
     service identity(disk)[Managed identity] in azure
-    service data(database)[Azure Cosmos DB for MongoDB vCore] in azure
+    service data(database)[Azure DocumentDB] in azure
 
     group host(server)[Azure Container Apps] in azure
 
@@ -65,7 +65,7 @@ architecture-beta
 
 ## (Optional) Run the solution locally
 
-1. If you haven't deployed the solution already, provision the Azure infrastructure to deploy the Azure Cosmos DB for MongoDB vCore cluster with Microsoft Entra ID authentication enabled.
+1. If you haven't deployed the solution already, provision the Azure infrastructure to deploy the Azure DocumentDB cluster with Microsoft Entra ID authentication enabled.
 
     ```shell
     azd provision
@@ -81,7 +81,7 @@ architecture-beta
 
     | | Description |
     | --- | --- |
-    | **`SETTINGS__ENDPOINT`** | The endpoint to the Azure Cosmos DB for MongoDB vCore cluster |
+    | **`SETTINGS__ENDPOINT`** | The endpoint to the Azure DocumentDB cluster |
 
     ```output
     SETTINGS__ENDPOINT = <azure-cosmos-db-mongodb-vcore-cluster-name>.global.mongocluster.cosmos.azure.com

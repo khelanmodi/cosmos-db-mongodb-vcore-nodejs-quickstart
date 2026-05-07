@@ -1,6 +1,6 @@
-metadata description = 'Provisions resources for an Azure Cosmos DB for MongoDB vCore cluster.'
+metadata description = 'Provisions resources for an Azure DocumentDB (with MongoDB compatibility) cluster.'
 
-@description('The name of the Azure Cosmos DB for MongoDB vCore cluster.')
+@description('The name of the Azure DocumentDB cluster.')
 param name string
 
 @description('Primary location for the resources.')
