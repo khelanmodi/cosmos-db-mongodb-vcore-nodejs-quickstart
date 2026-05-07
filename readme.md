@@ -1,6 +1,6 @@
 # Azure DocumentDB (with MongoDB compatibility) Quickstart - MongoDB driver for Node.js
 
-This Quickstart is a Express API application that illustrates basic usage of the MongoDB driver for Node.js with [Azure DocumentDB](https://learn.microsoft.com/azure/cosmos-db/mongodb/vcore). [Azure DocumentDB](https://learn.microsoft.com/azure/cosmos-db/mongodb/vcore/oss) is built on [DocumentDB](https://github.com/documentdb) providing a powerful and flexible solution for NoSQL database needs.
+This Quickstart is a Express API application that illustrates basic usage of the MongoDB driver for Node.js with [Azure DocumentDB](https://learn.microsoft.com/azure/documentdb/). [Azure DocumentDB](https://learn.microsoft.com/azure/documentdb/) is built on [DocumentDB](https://github.com/documentdb) providing a powerful and flexible solution for NoSQL database needs.
 
 ## Pre-requisites
 
